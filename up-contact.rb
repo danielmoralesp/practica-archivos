@@ -19,12 +19,12 @@ puts "Direccion del contacto"
 print '> '
 direccion = gets.chomp
 
-puts "Genero del contacto"
+puts "Genero del contacto (Male o Female)"
 print '> '
 genero = gets.chomp
 
 
-contacto = '"' + nombre + '"' + ", " + '"' + correo + '"' + ", " + '"' + telefono + '"' + ", " + '"' + direccion + '"' + ", " + '"' + genero + '"' + "\n"
+contacto = nombre + "," + correo + "," + telefono + "," + direccion + "," + genero + "\n"
 
 txt_file.write(contacto)
 
